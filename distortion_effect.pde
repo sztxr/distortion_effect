@@ -1,7 +1,6 @@
 int totalFrames = 60*2;
 int counter = 0;
 
-/* PROJECT VARIABLES */
 color[] result;
 PGraphics pg;
 PFont font;
@@ -32,7 +31,6 @@ void renderText() {
   pg.noStroke();
   pg.fill(255);
   pg.textFont(font, 800);
-  pg.textSize(800);
   pg.translate(width/2, height/2 - 100);
   pg.textAlign(CENTER, CENTER);
   pg.text("X", 0, 0);
