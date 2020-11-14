@@ -6,7 +6,6 @@ color[] result;
 PGraphics pg;
 PFont font;
 
-
 void setup() {
   size(800, 800);
 
@@ -15,11 +14,8 @@ void setup() {
 
   result = new color[pg.width * pg.height];
 
-  noStroke();
-  
   renderText(); // render text in setup if static
 }
-
 
 void draw() {
   float percent = float(counter % totalFrames) / totalFrames;
@@ -29,7 +25,6 @@ void draw() {
   
   counter++;
 }
-
 
 void renderText() {
   pg.beginDraw();
@@ -43,7 +38,6 @@ void renderText() {
   pg.text("X", 0, 0);
   pg.endDraw();
 }
-
 
 void render(float percent) {
   image(pg, 0, 0);
